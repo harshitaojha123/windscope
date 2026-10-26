@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="WindScope API", version="1.0.0")
 
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -19,12 +20,15 @@ app.add_middleware(
         "http://127.0.0.1:5175",
         "http://localhost:5176",
         "http://127.0.0.1:5176",
+        "http://localhost:5177",
+        "http://127.0.0.1:5177",
+        "https://windscope-bvty.vercel.app",
     ],
-    allow_origin_regex=r"^http://(localhost|127\.0\.0\.1):517[0-9]$",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 BASE = "https://data.elexon.co.uk/bmrs/api/v1"
 UTC = timezone.utc
