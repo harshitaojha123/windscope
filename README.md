@@ -1,6 +1,8 @@
 # WindScope
 
 WindScope evaluates UK national wind generation forecasts against actual generation for January 2026 using Elexon BMRS data.
+Frontend: https://windscope-bvty.vercel.app
+Backend: https://windscope-1.onrender.com
 
 ## Stack
 - React + Vite frontend
