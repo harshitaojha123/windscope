@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 
-const API_BASE = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const API_BASE = "https://windscope-1.onrender.com";
 
 const styles = {
   app: { display: "flex", minHeight: "100vh", background: "#f3f6fb", color: "#14243b", fontFamily: "Inter, Arial, sans-serif" },
